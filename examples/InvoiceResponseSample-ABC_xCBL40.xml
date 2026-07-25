@@ -1,0 +1,127 @@
+<InvoiceResponse xmlns:core="rrn:org.xcbl:schemas/xcbl/v4_0/core/core.xsd" xmlns="rrn:org.xcbl:schemas/xcbl/v4_0/financial/v1_0/financial.xsd"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="rrn:org.xcbl:schemas/xcbl/v4_0/financial/v1_0/financial.xsd ../../schema/org/xcbl/path_delim/schemas/xcbl/v4_0/financial/v1_0/financial.xsd">
+    <InvoiceResponseHeader>
+        <InvoiceResponseID>INV: 450005693</InvoiceResponseID>
+        <InvoiceReference>
+            <core:RefNum>INV: 450005693</core:RefNum>
+        </InvoiceReference>
+        <InvoiceResponseIssueDate>2001-02-15T09:05:00</InvoiceResponseIssueDate>
+        <InvoiceType>
+            <InvoiceTypeCoded>CommercialInvoice</InvoiceTypeCoded>
+        </InvoiceType>
+        <Language>
+            <core:LanguageCoded>en</core:LanguageCoded>
+        </Language>
+        <InvoiceResponseCoded>Accepted</InvoiceResponseCoded>
+        <InvoiceParty>
+            <BuyerParty>
+                <core:PartyID>
+                    <core:Agency>
+                        <core:AgencyCoded>AssignedBySellerOrSellersAgent</core:AgencyCoded>
+                    </core:Agency>
+                    <core:Ident>3000</core:Ident>
+                </core:PartyID>
+                <core:NameAddress>
+                    <core:Name1>ABC Enterprises</core:Name1>
+                    <core:POBox POBoxPostalCode="249"/>
+                    <core:PostalCode>20012</core:PostalCode>
+                    <core:City>Alpine</core:City>
+                    <core:Region>
+                        <core:RegionCoded>USNY</core:RegionCoded>
+                    </core:Region>
+                </core:NameAddress>
+                <core:PrimaryContact>
+                    <core:ContactName>Dietl,B.</core:ContactName>
+                    <core:ListOfContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>655-456-8911</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>TelephoneNumber</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>bdietl@ABC.com</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>EmailAddress</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                    </core:ListOfContactNumber>
+            </core:PrimaryContact>
+            </BuyerParty>
+            <SellerParty>
+                <core:PartyID>
+                    <core:Agency>
+                        <core:AgencyCoded>AssignedBySellerOrSellersAgent</core:AgencyCoded>
+                    </core:Agency>
+                    <core:Ident>BCVND</core:Ident>
+                </core:PartyID>
+                <core:NameAddress>
+                    <core:Name1>Dunn Manufacturing</core:Name1>
+                    <core:Department>Order Department</core:Department>
+                    <core:PostalCode>95006</core:PostalCode>
+                    <core:City>Orange</core:City>
+                    <core:Region>
+                        <core:RegionCoded>USCA</core:RegionCoded>
+                    </core:Region>
+                </core:NameAddress>
+                <core:OtherContacts>
+                    <core:Contact>
+                        <core:ContactName>Ms Black</core:ContactName>
+                        <core:ContactFunction>
+                            <core:ContactFunctionCoded>AccountsReceivableContact</core:ContactFunctionCoded>
+                        </core:ContactFunction>
+                        <core:ListOfContactNumber>
+                            <core:ContactNumber>
+                                <core:ContactNumberValue>212-345-4784</core:ContactNumberValue>
+                                <core:ContactNumberTypeCoded>TelephoneNumber</core:ContactNumberTypeCoded>
+                            </core:ContactNumber>
+                            <core:ContactNumber>
+                                <core:ContactNumberValue>Hblack@DunnMfg.com</core:ContactNumberValue>
+                                <core:ContactNumberTypeCoded>EmailAddress</core:ContactNumberTypeCoded>
+                            </core:ContactNumber>
+                        </core:ListOfContactNumber>
+                    </core:Contact>
+                </core:OtherContacts>
+            </SellerParty>
+            <BillToParty>
+                <core:PartyID>
+                    <core:Agency>
+                        <core:AgencyCoded>AssignedBySellerOrSellersAgent</core:AgencyCoded>
+                    </core:Agency>
+                    <core:Ident>3000</core:Ident>
+                </core:PartyID>
+                <core:NameAddress>
+                    <core:Name1>ABC Enterprises</core:Name1>
+                    <core:POBox POBoxPostalCode="249"/>
+                    <core:PostalCode>20012</core:PostalCode>
+                    <core:City>Alpine</core:City>
+                    <core:Region>
+                        <core:RegionCoded>USNY</core:RegionCoded>
+                    </core:Region>
+                </core:NameAddress>
+                <core:PrimaryContact>
+                    <core:ContactName>Dietl,B.</core:ContactName>
+                    <core:ListOfContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>655-456-8911</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>TelephoneNumber</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>bdietl@ABC.com</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>EmailAddress</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                    </core:ListOfContactNumber>
+                </core:PrimaryContact>
+            </BillToParty>
+        </InvoiceParty>
+    </InvoiceResponseHeader>
+    <ListOfInvoiceResponseDetail>
+        <InvoiceResponseDetail>
+            <InvoiceResponseCoded>Accepted</InvoiceResponseCoded>
+            <LineItemNum>
+                <core:BuyerLineItemNum>0010</core:BuyerLineItemNum>
+            </LineItemNum>
+        </InvoiceResponseDetail>
+        <InvoiceResponseDetail>
+            <InvoiceResponseCoded>Accepted</InvoiceResponseCoded>
+            <LineItemNum>
+                <core:BuyerLineItemNum>0011</core:BuyerLineItemNum>
+            </LineItemNum>
+        </InvoiceResponseDetail>
+    </ListOfInvoiceResponseDetail>
+</InvoiceResponse>

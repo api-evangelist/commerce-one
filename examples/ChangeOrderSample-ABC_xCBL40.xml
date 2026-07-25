@@ -1,0 +1,141 @@
+<ChangeOrder xmlns:core="rrn:org.xcbl:schemas/xcbl/v4_0/core/core.xsd" xmlns="rrn:org.xcbl:schemas/xcbl/v4_0/ordermanagement/v1_0/ordermanagement.xsd"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="rrn:org.xcbl:schemas/xcbl/v4_0/ordermanagement/v1_0/ordermanagement.xsd ../../schema/org/xcbl/path_delim/schemas/xcbl/v4_0/ordermanagement/v1_0/ordermanagement.xsd">
+<!--The Buyer is ABC Enterprises, they are purchasing parts from Dunn Manufacturing-->
+<!--They are changing their order from 111 items to 150 items in Line Number 0011-->
+    <ChangeOrderHeader>
+        <ChangeOrderNumber>
+            <BuyerChangeOrderNumber>CO9987440-00-33456700001</BuyerChangeOrderNumber>
+        </ChangeOrderNumber>
+        <ChangeOrderSequence>first change</ChangeOrderSequence>
+        <ChangeOrderIssueDate>2001-02-06T12:45:12</ChangeOrderIssueDate>
+        <OrderReference>
+            <core:RefNum>4500005693</core:RefNum>
+            <core:RefDate>2001-12-03T12:00:02</core:RefDate>
+        </OrderReference>
+        <SellerParty>
+            <core:PartyID>
+                <core:Agency>
+                    <core:AgencyCoded>AssignedBySellerOrSellersAgent</core:AgencyCoded>
+                </core:Agency>
+                <core:Ident>BCVND</core:Ident>
+            </core:PartyID>
+            <core:NameAddress>
+                <core:Name1>Dunn Manufacturing</core:Name1>
+                <core:Department>Order Department</core:Department>
+                <core:PostalCode>95006</core:PostalCode>
+                <core:City>Orange</core:City>
+                <core:Region>
+                    <core:RegionCoded>USCA</core:RegionCoded>
+                 </core:Region>
+            </core:NameAddress>
+            <core:OtherContacts>
+            <core:Contact>
+                <core:ContactName>Ms Black</core:ContactName>
+                <core:ContactFunction>
+                    <core:ContactFunctionCoded>AccountsReceivableContact</core:ContactFunctionCoded>
+                </core:ContactFunction>
+                <core:ListOfContactNumber>
+                    <core:ContactNumber>
+                        <core:ContactNumberValue>212-345-4784</core:ContactNumberValue>
+                        <core:ContactNumberTypeCoded>TelephoneNumber</core:ContactNumberTypeCoded>
+                     </core:ContactNumber>
+                    <core:ContactNumber>
+                       <core:ContactNumberValue>Hblack@DunnMfg.com</core:ContactNumberValue>
+                        <core:ContactNumberTypeCoded>EmailAddress</core:ContactNumberTypeCoded>
+                    </core:ContactNumber>
+                </core:ListOfContactNumber>
+            </core:Contact>
+                <core:Contact>
+                <core:ContactName>George Walsh</core:ContactName>
+                <core:ContactFunction>
+                    <core:ContactFunctionCoded>DeliveryContact</core:ContactFunctionCoded>
+                </core:ContactFunction>
+                <core:ListOfContactNumber>
+                    <core:ContactNumber>
+                        <core:ContactNumberValue>212-345-4701</core:ContactNumberValue>
+                        <core:ContactNumberTypeCoded>TelephoneNumber</core:ContactNumberTypeCoded>
+                    </core:ContactNumber>
+                    <core:ContactNumber>
+                        <core:ContactNumberValue>gwalsh@DunnMfg.com</core:ContactNumberValue>
+                        <core:ContactNumberTypeCoded>EmailAddress</core:ContactNumberTypeCoded>
+                    </core:ContactNumber>
+                </core:ListOfContactNumber>
+                </core:Contact>
+            </core:OtherContacts>
+        </SellerParty>
+        <BuyerParty>
+            <core:PartyID>
+                <core:Agency>
+                    <core:AgencyCoded>AssignedBySellerOrSellersAgent</core:AgencyCoded>
+               </core:Agency>
+                <core:Ident>3000</core:Ident>
+            </core:PartyID>
+            <core:NameAddress>
+                <core:Name1>ABC Enterprises</core:Name1>
+                <core:POBox POBoxPostalCode="249"></core:POBox>
+                <core:PostalCode>20012</core:PostalCode>
+                <core:City>Alpine</core:City>
+                <core:Region>
+                    <core:RegionCoded>USNY</core:RegionCoded>
+                </core:Region>
+            </core:NameAddress>
+            <core:PrimaryContact>
+                <core:ContactName>Dietl,B.</core:ContactName>
+                <core:ContactFunction>
+                    <core:ContactFunctionCoded>DepartmentOrPersonResponsibleForProcessingPurchaseOrder</core:ContactFunctionCoded>
+                </core:ContactFunction>
+                <core:ListOfContactNumber>
+                    <core:ContactNumber>
+                        <core:ContactNumberValue>655-456-8911</core:ContactNumberValue>
+                        <core:ContactNumberTypeCoded>TelephoneNumber</core:ContactNumberTypeCoded>
+                    </core:ContactNumber>
+                </core:ListOfContactNumber>
+            </core:PrimaryContact>
+        </BuyerParty>
+        <Purpose>
+            <core:PurposeCoded>Change</core:PurposeCoded>
+        </Purpose>
+        <ChangeType>
+            <core:ChangeTypeCoded>QuantityIncrease</core:ChangeTypeCoded>
+        </ChangeType>
+    </ChangeOrderHeader>
+    <ChangeOrderDetail>
+        <ListOfChangeOrderItemDetail>
+            <ChangeOrderItemDetail>
+                <ItemDetailChangeCoded>QuantityIncrease</ItemDetailChangeCoded>
+                <OriginalItemDetailWithChanges>
+                    <BaseItemDetail>
+                        <LineItemNum>
+                            <core:BuyerLineItemNum>00011</core:BuyerLineItemNum>
+                        </LineItemNum>
+                        <TotalQuantity>
+                             <core:QuantityValue>5</core:QuantityValue>
+                            <core:UnitOfMeasurement>
+                                <core:UOMCoded>EA</core:UOMCoded>
+                            </core:UnitOfMeasurement>
+                        </TotalQuantity>
+                    </BaseItemDetail>
+                </OriginalItemDetailWithChanges>
+                <LineItemNote>Change quanitity from 1 to 5.</LineItemNote>
+            </ChangeOrderItemDetail>
+        </ListOfChangeOrderItemDetail>
+    </ChangeOrderDetail>
+    <ChangeOrderSummary>
+        <OriginalOrderSummary>
+           <OrderTotal>
+                <core:MonetaryAmount>2110.00</core:MonetaryAmount>
+                <core:Currency>
+                    <core:CurrencyCoded>USD</core:CurrencyCoded>
+                </core:Currency>
+            </OrderTotal>
+        </OriginalOrderSummary>
+        <RevisedOrderSummary>
+
+            <OrderTotal>
+                <core:MonetaryAmount>6110.00</core:MonetaryAmount>
+                <core:Currency>
+                    <core:CurrencyCoded>USD</core:CurrencyCoded>
+                </core:Currency>
+            </OrderTotal>
+        </RevisedOrderSummary>
+    </ChangeOrderSummary>
+</ChangeOrder>

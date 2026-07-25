@@ -1,0 +1,115 @@
+generated: '2026-07-20'
+method: derived
+source: >-
+  vocabulary/xsd/messagemanagement.xsd — derived from the xCBL 4.0
+  messagemanagement namespace (ErrorResponseType, ErrorTypeCodeType,
+  SeverityCodeType, CategoryCodeType, ScopeCodeType, DocumentStatusCodeType,
+  ApplicationResponseTypeCodeType) in http://xcbl.org/xcbl40/downloads/xcbl40.zip
+format: xcbl-errorresponse
+notes: >-
+  xCBL is a document-exchange vocabulary, not an HTTP API, so there is no
+  RFC 9457 problem+json surface. Errors are carried as first-class xCBL business
+  documents in the messagemanagement namespace: ErrorResponse (a standalone
+  fault document) and ApplicationResponse (acknowledgement plus per-document
+  status). Codes below are the enumerated code lists published in the 4.0
+  schemas; the free-text Code element is implementation-defined.
+envelope:
+  document: ErrorResponse
+  namespace: rrn:org.xcbl:schemas/xcbl/v4_0/messagemanagement/v1_0/messagemanagement.xsd
+  fields:
+    - name: Code
+      description: Implementation-defined error code string.
+    - name: String
+      description: Short human-readable error text.
+    - name: DetailedMessage
+      description: Longer diagnostic detail.
+    - name: SeverityCoded
+      description: Severity of the condition (see severity_codes).
+    - name: CategoryCoded
+      description: Category of failure (see category_codes).
+    - name: ScopeCoded
+      description: Part of the message the error applies to (see scope_codes).
+    - name: Originator
+      description: Party that raised the error.
+    - name: Role
+      description: Role of the originating party.
+    - name: Pointer
+      description: Reference into the offending element of the source document.
+error_type_codes:
+  - code: CorrelationError
+    meaning: The message could not be correlated to an expected conversation or prior document.
+  - code: BusinessError
+    meaning: The document was well formed but failed a business rule.
+  - code: PayloadError
+    meaning: The payload itself was invalid or unprocessable.
+  - code: Informational
+    meaning: Non-failing informational condition.
+  - code: Other
+    meaning: Condition not covered by the other error types.
+severity_codes:
+  - code: Fatal
+    meaning: Processing cannot continue; the document is rejected.
+  - code: Warning
+    meaning: Processing continued but a condition was detected.
+  - code: Transient
+    meaning: Temporary condition; the sender may retry.
+category_codes:
+  - code: TransportUnavailable
+    meaning: The transport for delivery was unavailable.
+  - code: TransportFailure
+    meaning: The transport failed while delivering the message.
+  - code: AuthenticationFailure
+    meaning: The sender could not be authenticated.
+  - code: AuthorizationFailure
+    meaning: The authenticated sender was not authorized for the operation.
+  - code: SignatureFailure
+    meaning: A digital signature was missing or did not verify.
+  - code: EncryptionError
+    meaning: The message could not be decrypted or encryption was invalid.
+  - code: StructureError
+    meaning: The document did not validate against the xCBL schema.
+  - code: ContentError
+    meaning: The document validated structurally but carried invalid content.
+  - code: ProcessFailure
+    meaning: The receiving application failed while processing the document.
+  - code: Unknown
+    meaning: Category could not be determined.
+scope_codes:
+  - code: Envelope
+    meaning: The error applies to the message envelope.
+  - code: Header
+    meaning: The error applies to the document header.
+  - code: Payload
+    meaning: The error applies to the document payload.
+  - code: Attachment
+    meaning: The error applies to an attachment.
+  - code: NonMessageRelated
+    meaning: The error is not tied to a specific part of the message.
+  - code: Unknown
+    meaning: Scope could not be determined.
+document_status_codes:
+  - code: Received
+    meaning: The document was received.
+  - code: CheckedOK
+    meaning: The document passed validation checks.
+  - code: WarningError
+    meaning: Validation produced warnings.
+  - code: FatalError
+    meaning: Validation produced a fatal error; the document was rejected.
+  - code: ProcessingStarted
+    meaning: Application processing has begun.
+  - code: ProcessedOK
+    meaning: Application processing completed successfully.
+  - code: ProcessFatalError
+    meaning: Application processing failed fatally.
+  - code: ProcessWarningError
+    meaning: Application processing completed with warnings.
+  - code: Other
+    meaning: Status not covered by the other codes.
+application_response_types:
+  - code: AcknowledgeReceipt
+    meaning: Acknowledges receipt of a document.
+  - code: AcknowledgeProcess
+    meaning: Acknowledges that a document was processed.
+  - code: Error
+    meaning: Reports an error against a document.

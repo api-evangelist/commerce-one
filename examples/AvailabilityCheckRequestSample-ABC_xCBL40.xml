@@ -1,0 +1,165 @@
+<AvailabilityCheckRequest xmlns:core="rrn:org.xcbl:schemas/xcbl/v4_0/core/core.xsd" xmlns="rrn:org.xcbl:schemas/xcbl/v4_0/preordermanagement/v1_0/preordermanagement.xsd"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="rrn:org.xcbl:schemas/xcbl/v4_0/preordermanagement/v1_0/preordermanagement.xsd ../../schema/org/xcbl/path_delim/schemas/xcbl/v4_0/preordermanagement/v1_0/preordermanagement.xsd">
+    <AvailabilityCheckRequestHeader>
+        <AvailabilityCheckRequestID>2233445566</AvailabilityCheckRequestID>
+        <AvailabilityCheckRequestIssueDate>2001-02-05T09:00:00</AvailabilityCheckRequestIssueDate>
+        <SellerParty>
+            <core:PartyID>
+                <core:Agency>
+                    <core:AgencyCoded>AssignedBySellerOrSellersAgent</core:AgencyCoded>
+                </core:Agency>
+                <core:Ident>BCVND</core:Ident>
+            </core:PartyID>
+            <core:NameAddress>
+                <core:Name1>Dunn Manufacturing</core:Name1>
+                <core:Department>Order Department</core:Department>
+                <core:PostalCode>95006</core:PostalCode>
+                <core:City>Orange</core:City>
+                <core:Region>
+                    <core:RegionCoded>USCA</core:RegionCoded>
+                </core:Region>
+            </core:NameAddress>
+            <core:OtherContacts>
+            <core:Contact>
+                <core:ContactName>Ms Black</core:ContactName>
+                <core:ContactFunction>
+                    <core:ContactFunctionCoded>AccountsReceivableContact</core:ContactFunctionCoded>
+                </core:ContactFunction>
+                <core:ListOfContactNumber>
+                    <core:ContactNumber>
+                        <core:ContactNumberValue>212-345-4784</core:ContactNumberValue>
+                        <core:ContactNumberTypeCoded>TelephoneNumber</core:ContactNumberTypeCoded>
+                </core:ContactNumber>
+                <core:ContactNumber>
+                        <core:ContactNumberValue>Hblack@DunnMfg.com</core:ContactNumberValue>
+                        <core:ContactNumberTypeCoded>EmailAddress</core:ContactNumberTypeCoded>
+                    </core:ContactNumber>
+                </core:ListOfContactNumber>
+            </core:Contact>
+                <core:Contact>
+                <core:ContactName>George Walsh</core:ContactName>
+                <core:ContactFunction>
+                    <core:ContactFunctionCoded>DeliveryContact</core:ContactFunctionCoded>
+                </core:ContactFunction>
+                <core:ListOfContactNumber>
+                    <core:ContactNumber>
+                        <core:ContactNumberValue>212-345-4701</core:ContactNumberValue>
+                        <core:ContactNumberTypeCoded>TelephoneNumber</core:ContactNumberTypeCoded>
+                </core:ContactNumber>
+                <core:ContactNumber>
+                        <core:ContactNumberValue>gwalsh@DunnMfg.com</core:ContactNumberValue>
+                        <core:ContactNumberTypeCoded>EmailAddress</core:ContactNumberTypeCoded>
+                    </core:ContactNumber>
+                 </core:ListOfContactNumber>
+               </core:Contact>
+            </core:OtherContacts>
+        </SellerParty>
+        <BuyerParty>
+            <core:PartyID>
+                <core:Agency>
+                    <core:AgencyCoded>AssignedBySellerOrSellersAgent</core:AgencyCoded>
+               </core:Agency>
+                <core:Ident>3000</core:Ident>
+            </core:PartyID>
+            <core:NameAddress>
+                <core:Name1>ABC Enterprises</core:Name1>
+                <core:POBox POBoxPostalCode="249"></core:POBox>
+                <core:PostalCode>20012</core:PostalCode>
+                <core:City>Alpine</core:City>
+                <core:Region>
+                    <core:RegionCoded>USNY</core:RegionCoded>
+                </core:Region>
+            </core:NameAddress>
+            <core:PrimaryContact>
+                <core:ContactName>Dietl,B.</core:ContactName>
+                <core:ContactFunction>
+                    <core:ContactFunctionCoded>DepartmentOrPersonResponsibleForProcessingPurchaseOrder</core:ContactFunctionCoded>
+                </core:ContactFunction>
+                <core:ListOfContactNumber>
+                    <core:ContactNumber>
+                        <core:ContactNumberValue>655-456-8911</core:ContactNumberValue>
+                        <core:ContactNumberTypeCoded>TelephoneNumber</core:ContactNumberTypeCoded>
+                    </core:ContactNumber>
+                </core:ListOfContactNumber>
+            </core:PrimaryContact>
+        </BuyerParty>
+        <ShipToParty>
+            <core:PartyID>
+                <core:Agency>
+                    <core:AgencyCoded>AssignedByBuyerOrBuyersAgent</core:AgencyCoded>
+                </core:Agency>
+                <core:Ident>3000</core:Ident>
+            </core:PartyID>
+            <core:NameAddress>
+                <core:Name1>ABC Enterprises</core:Name1>
+                <core:StreetSupplement1>255 Marble Court</core:StreetSupplement1>
+                <core:StreetSupplement2>Marble Industrial Complex</core:StreetSupplement2>
+                <core:Building>Building</core:Building>
+                <core:PostalCode>20001</core:PostalCode>
+                <core:City>New York</core:City>
+                <core:Region>
+                    <core:RegionCoded>USNY</core:RegionCoded>
+                </core:Region>
+                <core:Country>
+                    <core:CountryCoded>US</core:CountryCoded>
+                </core:Country>
+            </core:NameAddress>
+            <core:PrimaryContact>
+                <core:ContactName>Ms. Audra Murphy</core:ContactName>
+                <core:ListOfContactNumber>
+                    <core:ContactNumber>
+                        <core:ContactNumberValue>655-456-8901</core:ContactNumberValue>
+                        <core:ContactNumberTypeCoded>TelephoneNumber</core:ContactNumberTypeCoded>
+                    </core:ContactNumber>
+                    <core:ContactNumber>
+                        <core:ContactNumberValue>Amurphy@ABC.com</core:ContactNumberValue>
+                        <core:ContactNumberTypeCoded>EmailAddress</core:ContactNumberTypeCoded>
+                    </core:ContactNumber>
+                </core:ListOfContactNumber>
+            </core:PrimaryContact>
+        </ShipToParty>
+    </AvailabilityCheckRequestHeader>
+    <ListOfAvailabilityCheckRequestItemDetail>
+        <AvailabilityCheckRequestItemDetail>
+            <LineItemNum>
+                <core:BuyerLineItemNum>0010</core:BuyerLineItemNum>
+            </LineItemNum>
+            <ItemIdentifiers>
+                <core:PartNumbers>
+                    <core:SellerPartNumber>
+                        <core:PartID>R-5000</core:PartID>
+                    </core:SellerPartNumber>
+                    <core:BuyerPartNumber>
+                        <core:PartID>R-5000</core:PartID>
+                    </core:BuyerPartNumber>
+                  </core:PartNumbers>
+           </ItemIdentifiers>
+            <RequestedQuantity>
+                <core:QuantityValue >111</core:QuantityValue>
+                <core:UnitOfMeasurement>
+                    <core:UOMCoded>EA</core:UOMCoded>
+                </core:UnitOfMeasurement>
+            </RequestedQuantity>
+        </AvailabilityCheckRequestItemDetail>
+        <AvailabilityCheckRequestItemDetail>
+            <LineItemNum>
+                <core:BuyerLineItemNum>0011</core:BuyerLineItemNum>
+            </LineItemNum>
+            <ItemIdentifiers>
+                <core:PartNumbers>
+                    <core:SellerPartNumber>
+                        <core:PartID>R-3456</core:PartID>
+                    </core:SellerPartNumber>
+                    <core:BuyerPartNumber>
+                        <core:PartID>R-3456</core:PartID>
+                    </core:BuyerPartNumber>
+                  </core:PartNumbers>
+           </ItemIdentifiers>
+            <RequestedQuantity>
+                <core:QuantityValue >1</core:QuantityValue>
+                <core:UnitOfMeasurement>
+                    <core:UOMCoded>EA</core:UOMCoded>
+                </core:UnitOfMeasurement>
+            </RequestedQuantity>
+        </AvailabilityCheckRequestItemDetail>
+    </ListOfAvailabilityCheckRequestItemDetail>
+</AvailabilityCheckRequest>

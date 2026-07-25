@@ -1,0 +1,136 @@
+generated: '2026-07-20'
+method: searched
+source: http://xcbl.org/xcbl40/documentation/listofdocuments.shtml
+name: xCBL — XML Common Business Library
+version: '4.0'
+publisher: Commerce One, Inc.
+released: '2003-03'
+canonical_form: W3C XML Schema (XSDL)
+prior_form: SOX (Schema for Object-Oriented XML) — used by xCBL 2.x/3.x
+license:
+  name: xCBL Copyright License
+  url: http://xcbl.org/license.shtml
+  summary: >-
+    Perpetual, nonexclusive, royalty-free, worldwide right and license to use,
+    publish, copy, modify and distribute the specification, subject to
+    attribution and a covenant not to assert IP against implementers.
+  copyright: Copyright Commerce One, Inc. 2000, All Rights Reserved
+distribution:
+  url: http://xcbl.org/xcbl40/downloads/xcbl40.zip
+  status: 200
+  size_bytes: 1870350
+  files: 846
+  xsd_files: 709
+  updated: '2003-03'
+  contents: XML Schema modules (namespace-mirroring folder tree) plus sample XML instances
+notes: >-
+  xCBL 4.0 splits the previously monolithic namespace into a shared "core"
+  namespace of reusable types plus independent functional-area namespaces, each
+  referencing only core. Functional namespaces do not reference each other, so
+  each can be versioned independently. Namespace URIs use the rrn:org.xcbl:
+  scheme. Design is an initial alignment with the OASIS Universal Business
+  Language (UBL) initiative; semantics derive from xCBL 3.5, EDI and RosettaNet.
+document_count: 44
+namespace_count: 9
+namespaces:
+  - area: core
+    namespace: rrn:org.xcbl:schemas/xcbl/v4_0/core/core.xsd
+    file: vocabulary/xsd/core.xsd
+    description: Core library of components reused across the other namespaces (types only).
+    documents: []
+  - area: ordermanagement
+    namespace: rrn:org.xcbl:schemas/xcbl/v4_0/ordermanagement/v1_0/ordermanagement.xsd
+    file: vocabulary/xsd/ordermanagement.xsd
+    description: >-
+      Components and root schemas for general order creation and processing —
+      documents exchanged between trading partners procuring goods or services.
+    documents:
+      - Order
+      - ChangeOrder
+      - OrderResponse
+      - OrderStatusRequest
+      - OrderStatusResult
+      - OrderConfirmation
+      - OrderConfirmationResponse
+      - OrderRequest
+  - area: preordermanagement
+    namespace: rrn:org.xcbl:schemas/xcbl/v4_0/preordermanagement/v1_0/preordermanagement.xsd
+    file: vocabulary/xsd/preordermanagement.xsd
+    description: >-
+      Documents used prior to order creation — confirmation or validation of
+      price and inventory information.
+    documents:
+      - PriceCheckRequest
+      - PriceCheckResult
+      - AvailabilityCheckRequest
+      - AvailabilityCheckResult
+      - RequestForQuotation
+      - Quote
+      - AvailabilityToPromise
+      - AvailabilityToPromiseResponse
+  - area: financial
+    namespace: rrn:org.xcbl:schemas/xcbl/v4_0/financial/v1_0/financial.xsd
+    file: vocabulary/xsd/financial.xsd
+    description: >-
+      Documents used for processing payment and invoicing of goods or services,
+      generally exchanged between a trading partner and a financial institution.
+    documents:
+      - Invoice
+      - InvoiceResponse
+      - RemittanceAdvice
+      - PaymentRequest
+      - PaymentRequestAcknowledgement
+      - FXRateRequest
+      - FXRateResponse
+      - PaymentStatusRequest
+      - PaymentStatusResponse
+  - area: materialsmanagement
+    namespace: rrn:org.xcbl:schemas/xcbl/v4-0/materialsmanagement/v1-0/materialsmanagement.xsd
+    file: vocabulary/xsd/materialsmanagement.xsd
+    description: >-
+      Documents for managing inventory — forecasting, shipment and receipt of
+      goods or services.
+    documents:
+      - AdvanceShipmentNotice
+      - GoodsReceipt
+      - PlanningSchedule
+      - PlanningScheduleResponse
+      - ShippingSchedule
+      - ShippingScheduleResponse
+      - InventoryReport
+  - area: messagemanagement
+    namespace: rrn:org.xcbl:schemas/xcbl/v4_0/messagemanagement/v1_0/messagemanagement.xsd
+    file: vocabulary/xsd/messagemanagement.xsd
+    description: >-
+      Documents associated with generic xCBL document processing — general
+      acknowledgement, response and error communication.
+    documents:
+      - MessageAcknowledgement
+      - ApplicationResponse
+      - ErrorResponse
+  - area: applicationintegration
+    namespace: rrn:org.xcbl:schemas/xcbl/v4_0/applicationintegration/v1_0/applicationintegration.xsd
+    file: vocabulary/xsd/applicationintegration.xsd
+    description: Documents used to interface with backend ERP systems.
+    documents:
+      - Requisition
+      - AccountCheck
+      - GetOrder
+      - GetERPData
+      - GetERPDataResponse
+  - area: catalog
+    namespace: rrn:org.xcbl:schemas/xcbl/v4_0/catalog/v1_0/catalog.xsd
+    file: vocabulary/xsd/catalog.xsd
+    description: Documents for catalog content creation, processing and inquiries.
+    documents:
+      - ProductCatalog
+  - area: statisticsandforecasting
+    namespace: rrn:org.xcbl:schemas/xcbl/v4_0/statisticsandforecasting/v1_0/statisticsandforecasting.xsd
+    file: vocabulary/xsd/statisticsandforecasting.xsd
+    description: >-
+      Documents providing statistical and forecasting data for products over
+      specified time periods.
+    documents:
+      - TimeSeries
+      - TimeSeriesResponse
+      - TimeSeriesRequest

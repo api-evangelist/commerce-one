@@ -1,0 +1,59 @@
+generated: '2026-07-20'
+method: searched
+source: live HTTP probe, 2026-07-20
+hosts:
+  - host: http://xcbl.org
+    note: >-
+      The only surviving Commerce One technical host. Plain HTTP only — TCP 443
+      refuses connections, so there is no HTTPS variant to probe. Served by
+      Microsoft-IIS/10.0 / ASP.NET.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /llms.txt
+        status: 404
+      - path: /robots.txt
+        status: 404
+  - host: https://commerceone.com
+    note: >-
+      No DNS A record. The domain is registered (created 1997-03-26, registry
+      expiry 2027-03-27, registrar Domain.com — Network Solutions) but does not
+      resolve, so nothing could be probed.
+    resolves: false
+    documents: []
+  - host: https://commerce-one.com
+    note: >-
+      Unrelated parked domain (GoDaddy nameservers) that redirects every path to
+      /lander. It returns HTTP 200 with an identical parking stub for every
+      /.well-known/ path probed, so these are soft-200s and NOT real discovery
+      documents. Recorded here so a future run does not mistake them for hits.
+    soft_200_catch_all: true
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        real: false
+      - path: /.well-known/openid-configuration
+        status: 200
+        real: false
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        real: false
+      - path: /.well-known/api-catalog
+        status: 200
+        real: false
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        real: false
+summary: >-
+  No genuine /.well-known/ discovery surface exists for Commerce One. No
+  security.txt, no OIDC/OAuth metadata, no API catalog. This is the expected
+  result for a company that ceased operating in 2004 and whose only remaining
+  host is a static archival site.

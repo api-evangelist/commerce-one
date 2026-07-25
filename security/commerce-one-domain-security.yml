@@ -1,0 +1,59 @@
+generated: '2026-07-20'
+method: probed
+source: live DNS/TLS/HTTP probe, 2026-07-20
+domains:
+  - domain: xcbl.org
+    resolves: true
+    a_records:
+      - 139.64.220.120
+    nameservers:
+      - ns1.dotster.com
+      - ns2.dotster.com
+    https:
+      supported: false
+      evidence: TCP connect to xcbl.org:443 refused (errno 61); site is served over plain HTTP only.
+    hsts: false
+    server: Microsoft-IIS/10.0
+    x_powered_by: ASP.NET
+    dnssec: false
+    ds_records: []
+    caa: []
+    spf: false
+    dmarc: false
+    mx: []
+    txt: []
+    risk_notes:
+      - >-
+        No TLS. The xCBL 4.0 schema and sample distribution can only be
+        downloaded over unauthenticated, unencrypted HTTP, so its integrity
+        cannot be verified in transit. Consumers should verify the archive out
+        of band.
+      - No SPF, DMARC or MX records — the domain is not configured to send or receive mail.
+      - No CAA records and no DNSSEC.
+  - domain: commerceone.com
+    resolves: false
+    a_records: []
+    registered: true
+    registrar: Domain.com — Network Solutions, LLC
+    created: '1997-03-26'
+    registry_expiry: '2027-03-27'
+    status:
+      - clientDeleteProhibited
+    risk_notes:
+      - >-
+        The historical corporate domain is registered and renewed but publishes
+        no A record, so no service, mail or well-known surface exists on it. The
+        xcblwebmaster@commerceone.com / xcblsupport@commerceone.com contacts
+        still printed on xcbl.org are therefore not expected to be deliverable.
+  - domain: commerce-one.com
+    resolves: true
+    related: false
+    risk_notes:
+      - >-
+        Unrelated parked domain (GoDaddy nameservers) serving a lander redirect
+        on every path. Not a Commerce One property; recorded only to prevent it
+        being mistaken for one.
+summary: >-
+  Commerce One has no defended domain posture. The one live host, xcbl.org, is
+  HTTP-only with no HSTS, DNSSEC, CAA, SPF or DMARC; the historical corporate
+  domain does not resolve at all.

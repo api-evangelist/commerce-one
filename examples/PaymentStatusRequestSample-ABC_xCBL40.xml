@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PaymentStatusRequest xmlns:core="rrn:org.xcbl:schemas/xcbl/v4_0/core/core.xsd" xmlns="rrn:org.xcbl:schemas/xcbl/v4_0/financial/v1_0/financial.xsd"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="rrn:org.xcbl:schemas/xcbl/v4_0/financial/v1_0/financial.xsd ../../schema/org/xcbl/path_delim/schemas/xcbl/v4_0/financial/v1_0/financial.xsd">
+    <PaymentStatusRequestHeader>
+        <PaymentStatusRequestID>45323453123</PaymentStatusRequestID>
+        <PaymentStatusRequestIssueDate>2001-02-18T09:30:00</PaymentStatusRequestIssueDate>
+        <PayerParty>
+            <core:PartyID>
+                <core:Agency>
+                    <core:AgencyCoded>AssignedBySellerOrSellersAgent</core:AgencyCoded>
+                </core:Agency>
+                <core:Ident>3000</core:Ident>
+            </core:PartyID>
+            <core:NameAddress>
+                <core:Name1>ABC Enterprises</core:Name1>
+                <core:POBox POBoxPostalCode="249"/>
+                <core:PostalCode>20012</core:PostalCode>
+                <core:City>Alpine</core:City>
+                <core:Region>
+                    <core:RegionCoded>USNY</core:RegionCoded>
+                </core:Region>
+            </core:NameAddress>
+        </PayerParty>
+        <FinancialServicesParty>
+            <core:PartyID>
+                <core:Agency>
+                    <core:AgencyCoded>AssignedBySellerOrSellersAgent</core:AgencyCoded>
+                </core:Agency>
+                <core:Ident>2345</core:Ident>
+            </core:PartyID>
+            <core:NameAddress>
+                <core:Name1>Everyman Bank</core:Name1>
+            </core:NameAddress>
+        </FinancialServicesParty>
+        <Language>
+            <core:LanguageCoded>en</core:LanguageCoded>
+        </Language>
+    </PaymentStatusRequestHeader>
+    <ListOfPaymentStatusRequestDetail>
+        <PaymentStatusRequestDetail>
+            <SequenceNumber>1</SequenceNumber>
+            <PaymentRequestID>
+                <core:RefNum>839401274</core:RefNum>
+            </PaymentRequestID>
+            <SettlementAmount>
+                <core:MonetaryAmount>6000.00</core:MonetaryAmount>
+                <core:Currency>
+                    <core:CurrencyCoded>USD</core:CurrencyCoded>
+                </core:Currency>
+            </SettlementAmount>
+            <ListOfPaymentRequestReferences>
+                <core:Reference>
+                    <core:RefNum>PR49805693</core:RefNum>
+                    <core:RefDate>2001-02-16T11:00:00</core:RefDate>
+                </core:Reference>
+            </ListOfPaymentRequestReferences>
+        </PaymentStatusRequestDetail>
+    </ListOfPaymentStatusRequestDetail>
+    <PaymentStatusRequestSummary>
+        <TotalNumberPaymentRequests>1</TotalNumberPaymentRequests>
+    </PaymentStatusRequestSummary>
+</PaymentStatusRequest>

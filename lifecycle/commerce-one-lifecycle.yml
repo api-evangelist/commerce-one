@@ -1,0 +1,61 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  http://xcbl.org/xcbl40/xcbl40.shtml, http://xcbl.org/earlierversions.shtml,
+  http://xcbl.org/faq.shtml, https://en.wikipedia.org/wiki/Commerce_One
+status: archival
+company_status: defunct
+summary: >-
+  Commerce One, Inc. filed for bankruptcy in October 2004 and no longer exists as
+  an operating company. Its patent portfolio was bought by Novell subsidiary JGR
+  Acquisitions in December 2004; remaining assets went to ComVest Partners, and
+  the Commerce One name was acquired by Perfect Commerce in February 2006. The
+  only Commerce One technical surface still reachable on the public internet is
+  xcbl.org, a static archival site that still serves the xCBL schema library and
+  its documentation over plain HTTP.
+current_version: '4.0'
+current_version_released: '2003-03'
+last_updated: '2003-03'
+versioning:
+  scheme: major.minor library release; per-namespace independent versioning from 4.0
+  policy_published: false
+  notes: >-
+    From 4.0, each functional-area namespace can be versioned independently
+    because functional namespaces reference only the shared core namespace and
+    never each other. Prior to 4.0 a single change forced a full library release.
+versions:
+  - version: '4.0'
+    released: '2003-03'
+    form: W3C XML Schema (XSDL)
+    status: current
+    url: http://xcbl.org/xcbl40/xcbl40.shtml
+  - version: '3.5'
+    form: SOX, W3C XML Schema, XDR (incl. BizTalk)
+    status: superseded
+    url: http://xcbl.org/xcbl35/xcbl35.shtml
+  - version: '3.0'
+    form: SOX, W3C XSDL, XDR (incl. BizTalk), XML DTD
+    status: superseded
+    url: http://xcbl.org/xcbl30/xcbl30.shtml
+  - version: '2.0'
+    form: SOX, XDR, XML DTD
+    status: superseded
+    url: http://xcbl.org/xcbl20/xcbl20.shtml
+deprecation:
+  policy_published: false
+  sunset_header: false
+  notes: >-
+    No RFC 8594 Sunset/Deprecation policy and no formal deprecation process are
+    published. Superseded versions remain downloadable from the earlier-versions
+    page rather than being withdrawn. No Deprecation pointer is emitted.
+status_page:
+  published: false
+  notes: No status page exists; there is no operated service to report on.
+sla:
+  published: false
+support:
+  email: xcblwebmaster@commerceone.com
+  notes: >-
+    Contact addresses (xcblwebmaster@ / xcblsupport@commerceone.com) remain
+    published on xcbl.org but commerceone.com has no DNS A record, so these
+    mailboxes are not expected to be deliverable.

@@ -1,0 +1,66 @@
+generated: '2026-07-20'
+method: searched
+source: http://xcbl.org/xcbl40/downloads/xcbl40.zip (xcbl40/samples/ABC/)
+description: >-
+  Valid xCBL 4.0 XML instance documents, saved verbatim from the "ABC" sample set
+  shipped inside the official xCBL 4.0 distribution archive. The archive also
+  contains autogen_full and autogen_min sample sets (machine-generated maximal
+  and minimal instances) which are not mirrored here because of their size.
+license: http://xcbl.org/license.shtml
+format: xml
+schema_version: '4.0'
+examples:
+  - document: AdvanceShipmentNotice
+    namespace_area: materialsmanagement
+    file: examples/ASNSampleABC_xCBL40.xml
+  - document: AvailabilityCheckRequest
+    namespace_area: preordermanagement
+    file: examples/AvailabilityCheckRequestSample-ABC_xCBL40.xml
+  - document: AvailabilityCheckResult
+    namespace_area: preordermanagement
+    file: examples/AvailabilityCheckResultSample-ABC_xCBL40.xml
+  - document: ChangeOrder
+    namespace_area: ordermanagement
+    file: examples/ChangeOrderSample-ABC_xCBL40.xml
+  - document: GoodsReceipt
+    namespace_area: materialsmanagement
+    file: examples/GoodsReceiptSampleABC_xCBL40.xml
+  - document: InvoiceResponse
+    namespace_area: financial
+    file: examples/InvoiceResponseSample-ABC_xCBL40.xml
+  - document: Invoice
+    namespace_area: financial
+    file: examples/InvoiceSample-ABC_xCBL40.xml
+  - document: OrderRequest
+    namespace_area: ordermanagement
+    file: examples/OrderRequestSample-ABC_xCBL40.xml
+  - document: OrderResponse
+    namespace_area: ordermanagement
+    file: examples/OrderResponseSample-ABC_xCBL40.xml
+  - document: Order
+    namespace_area: ordermanagement
+    file: examples/OrderSample-ABC_xCBL40.xml
+  - document: OrderStatusRequest
+    namespace_area: ordermanagement
+    file: examples/OrderStatusRequestSampleABC_xCBL40.xml
+  - document: OrderStatusResult
+    namespace_area: ordermanagement
+    file: examples/OrderStatusResultSampleABC_xCBL40.xml
+  - document: PaymentRequestAcknowledgement
+    namespace_area: financial
+    file: examples/PaymentRequestAknowledgementSample-ABC_xCBL40.xml
+  - document: PaymentRequest
+    namespace_area: financial
+    file: examples/PaymentRequestSample-ABC_xCBL40.xml
+  - document: PaymentStatusRequest
+    namespace_area: financial
+    file: examples/PaymentStatusRequestSample-ABC_xCBL40.xml
+  - document: PaymentStatusResponse
+    namespace_area: financial
+    file: examples/PaymentStatusResponseSample-ABC_xCBL40.xml
+  - document: PriceCheckRequest
+    namespace_area: preordermanagement
+    file: examples/PriceCheckRequestSample-ABC_xCBL40.xml
+  - document: PriceCheckResult
+    namespace_area: preordermanagement
+    file: examples/PriceCheckResultSample-ABC_xCBL40.xml

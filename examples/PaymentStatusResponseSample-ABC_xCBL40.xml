@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PaymentStatusResponse xmlns:core="rrn:org.xcbl:schemas/xcbl/v4_0/core/core.xsd"  xmlns="rrn:org.xcbl:schemas/xcbl/v4_0/financial/v1_0/financial.xsd"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="rrn:org.xcbl:schemas/xcbl/v4_0/financial/v1_0/financial.xsd ../../schema/org/xcbl/path_delim/schemas/xcbl/v4_0/financial/v1_0/financial.xsd">
+    <PaymentStatusResponseHeader>
+        <PaymentStatusResponseID>53434938204</PaymentStatusResponseID>
+        <PaymentStatusResponseIssueDate>2001-02-18T09:32:00</PaymentStatusResponseIssueDate>
+        <PaymentStatusRequestID>
+            <core:RefNum>45323453123</core:RefNum>
+            <core:RefDate>2001-02-18T09:30:00</core:RefDate>
+        </PaymentStatusRequestID>
+        <PayerParty>
+            <core:PartyID>
+                <core:Agency>
+                    <core:AgencyCoded>AssignedBySellerOrSellersAgent</core:AgencyCoded>
+                </core:Agency>
+                <core:Ident>3000</core:Ident>
+            </core:PartyID>
+            <core:NameAddress>
+                <core:Name1>ABC Enterprises</core:Name1>
+                <core:POBox POBoxPostalCode="249"/>
+                <core:PostalCode>20012</core:PostalCode>
+                <core:City>Alpine</core:City>
+                <core:Region>
+                    <core:RegionCoded>USNY</core:RegionCoded>
+                </core:Region>
+            </core:NameAddress>
+        </PayerParty>
+        <FinancialServicesParty>
+            <core:PartyID>
+                <core:Agency>
+                    <core:AgencyCoded>AssignedBySellerOrSellersAgent</core:AgencyCoded>
+                </core:Agency>
+                <core:Ident>2345</core:Ident>
+            </core:PartyID>
+            <core:NameAddress>
+                <core:Name1>Everyman Bank</core:Name1>
+            </core:NameAddress>
+        </FinancialServicesParty>
+        <Language>
+            <core:LanguageCoded>en</core:LanguageCoded>
+        </Language>
+    </PaymentStatusResponseHeader>
+    <ListOfPaymentStatusResponseDetail>
+        <PaymentStatusResponseDetail>
+            <SequenceNumber>1</SequenceNumber>
+            <PaymentRequestID>
+                <core:RefNum>PR49805693</core:RefNum>
+                <core:RefDate>2001-02-18T09:30:00</core:RefDate>
+            </PaymentRequestID>
+            <ConfirmationID>839401274</ConfirmationID>
+            <SettlementDate>2001-03-14T19:00:00</SettlementDate>
+            <SettlementAmount>
+                <core:MonetaryAmount>6000.00</core:MonetaryAmount>
+                <core:Currency>
+                    <core:CurrencyCoded>USD</core:CurrencyCoded>
+                </core:Currency>
+            </SettlementAmount>
+            <DebitAmount>
+                <core:MonetaryAmount>6000.00</core:MonetaryAmount>
+                <core:Currency>
+                    <core:CurrencyCoded>USD</core:CurrencyCoded>
+                </core:Currency>
+            </DebitAmount>
+            <CreditAmount>
+                <core:MonetaryAmount>6000.00</core:MonetaryAmount>
+                <core:Currency>
+                    <core:CurrencyCoded>USD</core:CurrencyCoded>
+                </core:Currency>
+            </CreditAmount>
+            <OriginatingFinancialInstitution>
+                <core:AccountDetail>
+                    <core:AccountID>91827364651</core:AccountID>
+                    <core:AccountTypeCoded>BusinessAccount</core:AccountTypeCoded>
+                    <core:AccountName1>ABC Enterprise Payment Account</core:AccountName1>
+                    <core:Currency>
+                        <core:CurrencyCoded>USD</core:CurrencyCoded>
+                    </core:Currency>
+                </core:AccountDetail>
+                <core:FinancialInstitution>
+                    <core:FinancialInstitutionID>382949283</core:FinancialInstitutionID>
+                    <core:FinancialInstitutionName>Bank of the US</core:FinancialInstitutionName>
+                </core:FinancialInstitution>
+            </OriginatingFinancialInstitution>
+            <ReceivingFinancialInstitution>
+                <core:AccountDetail>
+                    <core:AccountID>49234090115</core:AccountID>
+                    <core:AccountTypeCoded>PrimaryBank</core:AccountTypeCoded>
+                    <core:AccountName1>Dunn Manufacturing Receivables</core:AccountName1>
+                    <core:Currency>
+                        <core:CurrencyCoded>USD</core:CurrencyCoded>
+                    </core:Currency>
+                </core:AccountDetail>
+                <core:FinancialInstitution>
+                    <core:FinancialInstitutionID>32411521342</core:FinancialInstitutionID>
+                    <core:FinancialInstitutionName>Savings and Loan of California</core:FinancialInstitutionName>
+                </core:FinancialInstitution>
+            </ReceivingFinancialInstitution>
+        <PaymentParty>
+            <PayerParty>
+                <core:PartyID>
+                    <core:Agency>
+                        <core:AgencyCoded>AssignedBySellerOrSellersAgent</core:AgencyCoded>
+                    </core:Agency>
+                    <core:Ident>3000</core:Ident>
+                </core:PartyID>
+                <core:NameAddress>
+                    <core:Name1>ABC Enterprises</core:Name1>
+                    <core:POBox POBoxPostalCode="249"/>
+                    <core:PostalCode>20012</core:PostalCode>
+                    <core:City>Alpine</core:City>
+                    <core:Region>
+                        <core:RegionCoded>USNY</core:RegionCoded>
+                    </core:Region>
+                </core:NameAddress>
+            </PayerParty>
+            <PayeeParty>
+                <core:PartyID>
+                    <core:Agency>
+                        <core:AgencyCoded>AssignedBySellerOrSellersAgent</core:AgencyCoded>
+                    </core:Agency>
+                    <core:Ident>BCVND</core:Ident>
+                </core:PartyID>
+                <core:NameAddress>
+                    <core:Name1>Dunn Manufacturing</core:Name1>
+                    <core:Department>Order Department</core:Department>
+                    <core:PostalCode>95006</core:PostalCode>
+                    <core:City>Orange</core:City>
+                    <core:Region>
+                        <core:RegionCoded>USCA</core:RegionCoded>
+                    </core:Region>
+                </core:NameAddress>
+            </PayeeParty>
+            </PaymentParty>
+            <PaymentSystemCoded>NationalACH</PaymentSystemCoded>
+            <ListOfPaymentException>
+                <PaymentException>
+                    <PaymentExceptionCoded>Success</PaymentExceptionCoded>
+                </PaymentException>
+            </ListOfPaymentException>
+        </PaymentStatusResponseDetail>
+    </ListOfPaymentStatusResponseDetail>
+    <PaymentStatusResponseSummary>
+        <TotalNumberPaymentRequests>1</TotalNumberPaymentRequests>
+    </PaymentStatusResponseSummary>
+</PaymentStatusResponse>

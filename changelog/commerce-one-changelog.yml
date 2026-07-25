@@ -1,0 +1,59 @@
+generated: '2026-07-20'
+method: searched
+source: http://xcbl.org/xcbl40/documentation/releasenotes.shtml
+scheme: release-notes-per-library-version
+current_version: '4.0'
+frequency: none — final release was March 2003; the library is archival
+url: http://xcbl.org/xcbl40/documentation/releasenotes.shtml
+entries:
+  - version: '4.0'
+    date: '2003-03'
+    breaking: true
+    highlights:
+      - >-
+        First xCBL release using W3C XML Schema (XSDL) as the canonical form,
+        replacing SOX as the basis for all future releases.
+      - >-
+        Initial alignment with the OASIS Universal Business Language (UBL)
+        initiative; some UBL recommendations adopted in the 4.0 design.
+      - >-
+        Multiple namespaces replace the previous monolithic namespace — a shared
+        core namespace of reusable types plus eight functional-area namespaces
+        that reference only core, enabling independent versioning and better
+        parser performance.
+      - >-
+        Semantics of xCBL 3.5 retained; most 3.5 business documents carried
+        forward, with a small number of elements dropped.
+      - >-
+        New documents added to support integration with backend ERP systems
+        (applicationintegration namespace).
+      - Transformation maps between xCBL 3.5 and xCBL 4.0 produced with a third-party tool.
+    breaking_changes:
+      - Canonical schema language changed from SOX to W3C XSDL.
+      - Single namespace split into nine namespaces under the rrn:org.xcbl: scheme.
+      - Some xCBL 3.5 elements and documents were not carried forward.
+  - version: '3.5'
+    breaking: false
+    highlights:
+      - >-
+        Added 9 new xCBL documents on top of xCBL 3.0; some 3.0 documents
+        modified in response to new requirements and bug fixes.
+    url: http://xcbl.org/xcbl35/xcbl35.shtml
+  - version: '3.0'
+    breaking: false
+    highlights:
+      - >-
+        Published in SOX, W3C XSDL, XDR (including BizTalk Server sets) and XML
+        DTD form to support all types of applications.
+    url: http://xcbl.org/xcbl30/xcbl30.shtml
+  - version: '2.0'
+    breaking: false
+    highlights:
+      - >-
+        Release 3 of xCBL 2.0, in SOX, XDR and DTD formats with sample documents
+        and documentation.
+    url: http://xcbl.org/xcbl20/xcbl20.shtml
+notes: >-
+  No dated changelog beyond the per-version release notes exists. Commerce One
+  ceased operating in 2004, so no entries have been added since the March 2003
+  4.0 final release.
