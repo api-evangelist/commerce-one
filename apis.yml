@@ -13,6 +13,17 @@ description: >-
   Library — a royalty-free library of 44 XML business documents across 9
   namespaces, still published and downloadable from xcbl.org. Commerce One also
   created SOX, the schema language that influenced W3C XML Schema and JAXB.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
