@@ -64,29 +64,58 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Commerce One, Inc. was a Pleasanton, California B2B e-commerce software company and one of the defining names of the dot-com era, running the MarketSite marketplace and the Global Trading Web trading network. Founded in 1994 as DistriVision, renamed Commerce One in 1997, it IPO'd in July 1999 and peaked in 2000 at a $21.5B market capitalization. It filed for bankruptcy in October 2004.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-**Status: defunct.** `commerceone.com` is registered but publishes no DNS A record. There is no live API, developer portal, SDK, or support surface.
+Commerce One, Inc. was a Pleasanton, California B2B e-commerce software company and one of the defining names of the dot-com era, running the MarketSite marketplace and the Global Trading Web trading network. Founded in 1994 as DistriVision and renamed Commerce One in 1997, it went public in July 1999 and peaked in 2000 at a $21.5B market capitalization on $401M of revenue. It filed for bankruptcy in October 2004; its patent portfolio went to Novell subsidiary JGR Acquisitions and the Commerce One name to Perfect Commerce in 2006. The company no longer operates and has no live API or developer portal. What survives, and what this profile documents, is xCBL — the XML Common Business Library — a royalty-free library of 44 XML business documents across 9 namespaces, still published and downloadable from xcbl.org. Commerce One also created SOX, the schema language that influenced W3C XML Schema and JAXB.
 
-## What survives
+**Areas:** Company · B2B · E-Commerce · Procurement · Supply Chain · XML · EDI · Schema · Marketplace · Defunct
 
-`xcbl.org` is still online — a static, HTTP-only archival site that continues to serve **xCBL 4.0**, the XML Common Business Library: a royalty-free library of 44 XML business documents across 9 namespaces, released March 2003 as the first xCBL version to use W3C XML Schema (XSDL) instead of Commerce One's own SOX schema language. Commerce One's SOX influenced W3C XML Schema and JAXB.
+## Commerce One on APIs.io (historical record)
 
-The full distribution (1.8 MB, 846 files, 709 `.xsd` modules plus sample instances) is still downloadable from <http://xcbl.org/xcbl40/downloads/xcbl40.zip> under a perpetual, royalty-free license.
+Everything profiled for Commerce One is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/commerce-one/](https://apis.io/providers/commerce-one/)** — or go straight to one of the APIs or properties below.
 
-## Artifacts in this repo
+### APIs (1)
 
-| Path | What |
-|---|---|
-| `vocabulary/commerce-one-xcbl-vocabulary.yml` | The 9 xCBL namespaces and all 44 business documents |
-| `vocabulary/xsd/` | The 9 namespace root schemas, verbatim from the official archive |
-| `examples/` | 18 valid xCBL 4.0 sample XML instances, verbatim, plus `_index.yml` |
-| `errors/commerce-one-problem-types.yml` | The `ErrorResponse` envelope and its enumerated code lists |
-| `conformance/commerce-one-conformance.yml` | XSDL / OASIS UBL / EDI / RosettaNet / SOX posture |
-| `lifecycle/commerce-one-lifecycle.yml` | Version history 2.0 → 4.0 and the company wind-down |
-| `changelog/commerce-one-changelog.yml` | Per-version release notes |
-| `well-known/commerce-one-well-known.yml` | Discovery probe results (none found) |
-| `security/commerce-one-domain-security.yml` | DNS/TLS posture — no TLS, no SPF/DMARC/DNSSEC/CAA |
-| `llms/commerce-one-llms.txt` | Agent-facing summary of everything above |
+- [xCBL — XML Common Business Library](https://apis.io/apis/commerce-one/xcbl/) — xCBL 4.0 is a royalty-free library of XML business documents and reusable components for business-to-business e-commerce, published by Commerce One and…
 
-Backed by: canaan-partners
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [xCBL — XML Common Business Library Vocabulary](https://apis.io/vocabularies/commerce-one/commerce-one-xcbl-vocabulary/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Commerce One Domain Security](https://apis.io/security/commerce-one/commerce-one-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Documentation](http://xcbl.org/xcbl40/documentation.shtml)
+- [Getting started](http://xcbl.org/about.shtml)
+- [API reference](http://xcbl.org/xcbl40/documentation/listofdocuments.shtml)
+- [Support](http://xcbl.org/devresources.shtml)
+- [Terms of service](http://xcbl.org/license.shtml)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Commerce One: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/commerce-one/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
